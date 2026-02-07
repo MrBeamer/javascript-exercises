@@ -10,13 +10,11 @@ const palindromes = function (str) {
     }
   }
   let reversedStr = sanitizedStr.split("").reverse().join("");
-  console.log(sanitizedStr);
-  console.log(reversedStr);
   return sanitizedStr === reversedStr ? true : false;
 };
 
 console.log(palindromes("racecar"));
-console.log(palindromes("r3ace3car"));
+console.log(palindromes("taco"));
 
 // Do not edit below this line
 module.exports = palindromes;
